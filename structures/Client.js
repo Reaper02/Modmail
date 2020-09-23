@@ -17,8 +17,8 @@ class ModmailClient extends Client {
         Constants
         */ 
        this.prefix = "*";   
-       this.category = ""; //category id for threads
-       this.role = ""; //suport team id
+       this.category = "758461853356654606"; //category id for threads
+       this.role = "758461951683592232"; //suport team id
     }
     commandHandler(path){
 this.fs.readdirSync(this.path.normalize(path)).map((f) => {
