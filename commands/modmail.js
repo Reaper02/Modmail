@@ -29,7 +29,7 @@ module.exports = {
                    allow: [`VIEW_CHANNEL`, `SEND_MESSAGES`, `ADD_REACTIONS`, `ATTACH_FILES`]
                }
            ]
-       })
+    const ChannelCollector = newChannel.createMessageCollector((msg) => msg.channel.id === newChannel.id);
        Channel.send(client.embed({
            description: `The user ${message.author.tag} (${message.author.id}) is creating a modmail thread! Vreated in ${newChannel}`
        }, message))
